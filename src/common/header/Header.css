@@ -1,0 +1,52 @@
+.app-header {
+   background-color: #263238;
+   color: #fff;
+   font-size: 15px;
+   vertical-align: middle;
+   text-align: left;
+   height: 36px;
+   padding: 8px 32px 8px 16px;
+}
+
+.app-logo {
+   animation: app-logo-spin infinite 8s linear;
+   height: 35px;
+   background: #ff7f7f;
+}
+
+@keyframes app-logo-spin {
+   from {
+      transform: scaleX(-1);
+   }
+}
+
+.searchIcon {
+   padding: inherit;
+   position: absolute;
+   display: flex;
+   align-Items: center;
+   justify-content: center;
+   border-radius: 4px;
+   width: 300px;
+   background-color: #c0c0c0;
+   vertical-align: middle;
+}
+
+.searchBox {
+   border-radius: 4px;
+   width: 300px;
+   background-color: #c0c0c0;
+   vertical-align: middle;
+
+}
+.header-logo
+{
+   color:  #fff;
+   font-size: 18px;
+}
+.hr{
+   height:1.5px;
+   background-color:#f2f2f2;
+   margin-left:5px;
+   margin-right:5px;
+ }
