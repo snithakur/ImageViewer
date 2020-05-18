@@ -58,7 +58,7 @@ class Data extends Component{
     }
 
     render(){
-        const {item, comments} = this.props;
+        const {item} = this.props;
 
         let createdTime = new Date(0);
         createdTime.setUTCSeconds(item.created_time);
