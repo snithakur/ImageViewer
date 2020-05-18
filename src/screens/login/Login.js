@@ -8,16 +8,12 @@ import FormControl from '@material-ui/core/FormControl';
 import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormHelperText from '@material-ui/core/FormHelperText';
-import {withRouter} from 'react-router-dom';
 class Login extends Component{
 
      
-
-
-    constructor() {
+constructor() {
         super();
         this.state = {
-            modalIsOpen: false,
             value: 0,
             usernameRequired: "dispNone",
             username: "",
@@ -34,11 +30,11 @@ class Login extends Component{
         this.state.username === "" ? this.setState({ usernameRequired: "dispBlock" }) : this.setState({ usernameRequired: "dispNone" });
         this.state.loginPassword === "" ? this.setState({ loginPasswordRequired: "dispBlock" }) : this.setState({ loginPasswordRequired: "dispNone" });
     
-        if (this.state.username === "" || this.state.password === "") { return }
+        if (this.state.username === "" || this.state.password === "") 
+        { return }
 
         if (this.state.username === "admin" && this.state.password==="root"){
             sessionStorage.setItem('username','admin');
-            sessionStorage.setItem('access-token','8661035776.d0fcd39.39f63ab2f88d4f9c92b0862729ee2784');
             this.setState({ loggedIn: true });
             this.props.history.push('/home');   
         }
@@ -57,7 +53,7 @@ class Login extends Component{
     render(){
 
         return(
-            <div className="bookShow">
+            <div className="container">
                 <Header/>
                 
                 <Card className="cardStyle">
