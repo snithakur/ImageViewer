@@ -1,0 +1,39 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+.row{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:center
+}
+
+.big {
+    width : 600px;
+    font-size: big;
+}
+
+.small{
+    float: left;
+    width: 200px;
+    font-size: small;
+}
+
+.small-text{
+    font-size:small;
+}
+
+.image-modal-container{
+    display:flex;
+    flex-direction:row;
+    background-color: #fff;
+    width:70%;
+    height:70%
+}
+
+.image-class{
+    width:50%;
+    padding:10;
+}
