@@ -17,3 +17,23 @@ padding: 8px 32px 8px 16px;
  @keyframes app-logo-spin {
     from { transform: scaleX(-1); }
  }
+
+ .searchIcon {
+   padding: inherit;
+   position: absolute;
+   display: flex;
+   align-Items : center;
+   justify-content: center;
+   border-radius: 4px;
+    width: 300px;
+    background-color: #c0c0c0;
+    vertical-align: middle;
+ }
+
+ .searchBox{
+    border-radius: 4px;
+    width: 300px;
+    background-color: #c0c0c0;
+    vertical-align: middle;
+
+ }

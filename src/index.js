@@ -1,15 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App';
 import Login from './screens/login/Login.js';
-
+import {BrowserRouter} from 'react-router-dom';
 ReactDOM.render(
-    <div>
-    <span>
-    </span>
-    
-    <Login/>
-    </div>
-    , 
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>,
     document.getElementById('root')
 );
